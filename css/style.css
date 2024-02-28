@@ -1,0 +1,361 @@
+body
+{
+    overflow: hidden;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.top-header{
+    height: 30px;
+    padding: 5px;
+    align-items: center;
+    display: flex;
+
+}
+
+.top-header ul{
+    display: flex;
+    margin-left: 93rem;
+    margin-right: 100px;
+    gap: 50px;
+    padding-inline: 35px;
+    font-size: 16px;
+}
+
+.bottom-header{
+    height: 88px;
+    padding-inline: 345px;
+    background-color: white;
+}
+header{
+    align-items: center;
+    display: flex;
+}
+
+header a{
+    padding-inline: 15px;
+    color: #191B35;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 700;
+    width: 100px
+}
+
+
+.logo,
+nav {
+    flex: 1;
+}
+
+.logo{
+    padding-block: 15px;
+    padding-inline: 21px;
+}
+
+.content-container{
+    height: 715px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e60062 url(https://www.sterkhuis.nl/wp-content/uploads/2018/01/patroon-hart-roze-sm.jpg?id=26237) ;
+    background-repeat: repeat ;
+}
+#scenario-container {
+    width: 700px;
+    height: 330px;
+    padding-inline: 30px;
+    display: flex;
+    margin-left: 200px;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: white;
+    border-radius: 2em;
+    scale: 1.3;
+}
+
+.button-container{
+    padding: 10px;
+    height: 400px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.button-toggle-txt{
+    text-align: center;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: #191B35;
+    font-weight: bold   ;
+}
+.button-toggle-chat{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 10px;
+}
+.btn-chat{
+    border: 0px solid black;
+    color: white;
+    width: 150px;
+    height: 30px;
+    font-weight: bold;
+    font-size: 12px;
+    margin-right: -1px;
+    border-radius: 2em;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.button-active {
+    border: 1px solid #e60062;
+    background: #ece9e9c0;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.details-container{
+    height: 330px;
+    width: 200px;
+    padding-inline: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.details-txt{
+    text-align: center;
+    margin: 0;
+    margin-top: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: #191B35;
+    font-weight: bold   ;
+}
+
+.details-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 20px;
+}
+
+.story-container{
+    padding: 10px;
+    height: 400px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.story-txt{
+    text-align: center;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: #191B35;
+    font-weight: bold   ;
+}
+
+.button-toggle-story{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 10px;
+}
+.btn-story{
+    border: 0px solid black;
+    color: black;
+    width: 150px;
+    height: 30px;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 12px;
+    margin-right: -1px;
+    border-radius: 2em;
+    background-color: #e60062;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    cursor: pointer;
+}
+.story-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.chatName, .storyName{
+    text-shadow: 2px 2px 3px black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.text-value{
+    text-align: center;
+    height: 30px;
+    border-color: #e60062;
+    border-radius: 2em;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.start-sim{
+    width: 177px;
+    height: 40px;
+    background-color: #e60062;
+    color: white;
+    border-radius: 2em;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    cursor: pointer;
+}
+
+#geslacht{
+    width: 177px;
+    text-align: center;
+    height: 30px;
+    border: 2px solid;
+    border-color: #e60062;
+    border-radius: 2em;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+::placeholder{
+    color: black;
+}
+nav li {
+    list-style: none;
+}
+
+.content-wrapper{
+    width: 1050px;
+    height: 30px;
+	margin: 0 auto;
+}
+
+footer{
+    background-color: #203261;  
+	position: absolute;
+	bottom: 0;
+	padding: 20px 0;
+	width: 100%;  
+    color: white;  
+}
+  
+#source-link {
+    bottom: 60px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+  
+  
+.meta-link {
+    align-items: center;
+    backdrop-filter: blur(3px);
+    background-color: white;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    bottom: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;  
+    gap: 5px;
+    left: 10px;
+    padding: 10px 20px;
+    position: absolute;
+    text-decoration: none;
+    transition: background-color 400ms, border-color 400ms;
+    z-index: 10000;
+    border-radius: 15px;
+    left: 85%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border: solid 1px rgba(88, 87, 87, 0.534);
+    transition: 200ms ease-in-out;
+}
+
+.meta-link:hover {
+    padding: 20px 30px;
+    font-size: 20px;
+}
+.meta-link > i, .meta-link > span {
+    height: 20px;
+}
+  
+.meta-link > span {
+    color: black;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+}
+
+#community-container{
+    position: absolute;
+    height: 450px;
+    padding-bottom: 20px;
+    top: 250px;
+    left: 150px;
+    background-color: white;
+    border-radius: 1em;
+}
+
+.community-txt{
+    align-items: center;
+    text-align: center;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 700;
+    color: #191B35;
+}
+
+.community-tab{
+    width: 250px;
+    height: 85px;
+    border: 3px solid #e60062;  
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 2em;
+    margin-inline: 15px;
+}
+
+.community-tab p{
+    margin-left: 10px;
+    transition: 200ms ease-in-out;
+}
+
+.community-tab p:hover{
+    font-size: 20px;
+}
+.community-icon{
+    margin-left: 10px;
+    width: 60px;
+    border: 1px solid #e60062;
+    border-radius: 50%;
+}
+
+.project-h1{
+    position: absolute;
+    color: white;
+    margin-inline: auto;
+    top: 100px;
+    left: 820px;
+    font-size: 4rem;
+}
+
+.selected { 
+    border: 2.5px solid rgba(0, 0, 0, 0.514); 
+}

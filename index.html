@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="https://www.sterkhuis.nl/wp-content/uploads/2018/01/Logo-Sterk-Huis.svg">
+    <title>DenkendDelen - Hackathon 2023</title>
+</head>
+<div>
+  <div class="top-header" style="background-color: #191b35;">
+    <ul>
+      <a href="">> Verwijzers</a>
+      <a href="">> Clienten</a>
+    </ul>
+  </div>
+  <header class="bottom-header">
+      <h1 class="logo" ><a href="https://www.sterkhuis.nl/"><img  src="https://www.sterkhuis.nl/wp-content/uploads/2018/01/Logo-Sterk-Huis.svg" alt="Sterk Huis" style="width: 80px"></a></h1>
+      <nav>
+        <ul>
+          <a href="" style="color:#ec294c;">Scenarios</a>
+          <a href="">Hulp bij</a>
+          <a href="">Wie wij zijn</a>
+          <a href="">Wat wij doen</a>
+          <a href="">Werken bij</a>
+          <a href="">Nieuws</a>
+          <a href="">Contact</a>
+        </ul>
+      </nav>
+  </header>
+  <div id="community-container">
+    <p class="community-txt">Community</p>
+    <div class="community-tab">
+      <img class="community-icon" src="https://icons.veryicon.com/png/o/internet--web/55-common-web-icons/person-4.png">
+      <p>Hallo allemaal!...</p>
+    </div>
+    <div class="community-tab">
+      <img class="community-icon" src="https://icons.veryicon.com/png/o/internet--web/55-common-web-icons/person-4.png">
+      <p>Ik heb ergens hulp bij nodig...</p>
+    </div>
+    <div class="community-tab">
+      <img class="community-icon" src="https://icons.veryicon.com/png/o/internet--web/55-common-web-icons/person-4.png">
+      <p>Hoe gaat het met iedereen...</p>
+    </div>
+    <div class="community-tab">
+      <img class="community-icon" src="https://icons.veryicon.com/png/o/internet--web/55-common-web-icons/person-4.png">
+      <p>Update van de site...</p>
+    </div>
+  </div>
+  <div class="content-container">
+    <h1 class="project-h1">Project: Denkend Delen</h1>
+    <div id="scenario-container">
+      <div class="button-container">
+          <p class="button-toggle-txt">Chat</p>
+          <div class="button-toggle-chat">
+            <button class="btn-chat" style="background: #d6d300;" id="1">  
+              <div class="chatName">Snapchat</div>
+            </button>
+            <button class="btn-chat" style="background: #3fa9ef;" id="2">
+              <div class="chatName">SMS</div>
+            </button>
+            <button class="btn-chat" style="background: #ec294c;" id="3">
+              <div class="chatName">Instagram</div>
+            </button>
+            <button class="btn-chat" style="background: #3ae259;" id="4">
+              <div class="chatName">Whatsapp</div>
+            </button>
+          </div>
+      </div>    
+
+      <div class="details-container">
+          <p class="details-txt">Simulatie Gegevens</p>
+          <div class="details-wrapper">
+            <input class="text-value" type="text" placeholder="Naam"></input>
+            <input class="text-value" type="text" placeholder="Leeftijd"></input>
+
+            <select name="geslacht" id="geslacht">
+              <option value="Geslacht">Kies je geslacht</option>
+              <option value="Man">Man</option>
+              <option value="Vrouw">Vrouw</option>
+            </select>
+            <button onclick="location.href='simulation.php'" class="start-sim">Start Simulatie</button>
+          </div>
+      </div>
+
+      <div class="story-container">
+        <p class="story-txt">Verhaal</p>
+        <div class="button-toggle-story">
+            <button class="btn-story"  id="1">  
+              <div class="storyName">Naaktfoto</div>
+            </button>
+            <button class="btn-story" id="2">
+              <div class="storyName">Ongepast Bericht</div>
+            </button>
+            <button class="btn-story"  id="3">
+              <div class="storyName">Dreigen</div>
+            </button>
+            <button class="btn-story"  id="4">
+              <div class="storyName">Naakt videochat</div>
+            </button>
+        </div>
+      </div>
+    </div>  
+  </div>
+  <a id="source-link" class="meta-link" href="index.html" target="_blank">
+    <i class="fa-solid fa-link"></i>
+    <span>Chat with us 👋</span>
+  </a>     
+
+  <footer>
+    <div class="content-wrapper">
+        <p>Stichting Sterk Huis</p>
+    </div>
+  </footer>  
+</body>
+<script src="js/main.js"></script>
+</html>

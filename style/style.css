@@ -1,0 +1,485 @@
+.indexBody{
+    background: #e60062 url(https://www.sterkhuis.nl/wp-content/uploads/2018/01/patroon-hart-roze-sm.jpg?id=26237);
+    background-repeat: repeat;
+}
+
+.mainContainer{
+    position: relative;
+    width: 95%;
+    height: 1050px;
+    margin-inline: auto;
+    margin-top: 50px;
+}
+
+.phoneContainer{
+    position: relative;
+    width: 50%;
+    height: calc(100% - 120px);
+    margin-inline: auto;
+}
+
+.phone{
+
+    --phone-case-color: rgb(6, 62, 86);
+
+    position: relative;
+    width: 400px;
+    aspect-ratio: 9 / 19.5;
+    background-color: rgb(35, 35, 35);
+    margin-inline: auto;
+    border: solid 15px rgb(11, 11, 11);
+    border-right: solid 15px rgba(42, 42, 42, 0.16);
+    border-bottom: solid 15px rgba(42, 42, 42, 0.16);
+    border-radius: 3vw;
+    overflow: hidden;
+    outline: 15px solid var(--phone-case-color);
+}
+
+.phone::before{
+    content: '';
+    position: absolute;
+    width: 55%;
+    height: 40px;
+    background-color: rgb(11, 11, 11);
+    left: 50%;
+    top: -1.6%;
+    transform: translate(-50%, 0);
+    border-radius: 20vw;
+    z-index: 20;
+}
+
+.phone::after{
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 6px;
+    background-color: rgb(255, 255, 255);
+    left: 50%;
+    bottom: 2%;
+    transform: translate(-50%, 0);
+    border-radius: 20vw;
+}
+
+.phone-content{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: white;
+    font-family: system-ui;
+    font-size: 1.2rem;
+    height: 100%;
+    overflow-y: scroll;
+    background-color: rgb(0, 0, 0);
+    gap: 2px;
+}
+
+.phone-content div:first-child{
+    margin-top: 115px;
+}
+.phone-content div:last-child{
+    margin-bottom: 135px;
+}
+
+.breakDiv{
+    width: 100%;
+    height: 15px;
+    color: black;
+}
+
+
+.phone-content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(28, 28, 28, 0.85);
+    backdrop-filter: blur(10px);
+    height: 120px;
+}
+
+.phone-content::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(28, 28, 28, 0.85);
+    backdrop-filter: blur(10px);
+    height: 100px;
+}
+
+.phone-content::-webkit-scrollbar{
+    width: 4px;
+    height: 0;
+}
+
+.phone-content::-webkit-scrollbar-thumb{
+    background-color: rgba(93, 93, 93, 0.716);
+    border-radius: 100vw;
+    z-index: 10;
+    height: 10px;
+}
+
+.their-text{
+    padding: 10px;
+    padding-inline: 20px;
+    background-color: rgb(24, 24, 24);
+    border-radius: 1.2vw;
+    max-width: 75%;
+    width: fit-content;
+}
+
+.their-text img, .your-text img{
+    position: relative;
+    z-index: 1; 
+    max-width: 220px;
+    margin-block: 10px; 
+    border-radius: 1vw;
+    filter: blur(7px);
+}
+
+.endText{
+    background-color: rgb(30, 198, 67);
+}
+
+.endText:hover{
+    cursor: pointer;
+}
+
+.your-text{
+    padding: 10px;
+    padding-inline: 20px;
+    background-color: rgb(28, 126, 217);
+    border-radius: 1.2vw;
+    max-width: 60%;
+    align-self: flex-end;
+}
+
+.dateDiv{
+    margin-inline: auto;
+    width: 120px;
+    font-size: 0.8rem;
+    color: rgb(147, 147, 147);
+    margin-inline: auto;
+    margin-bottom: 20px;
+}
+
+.dateDiv p{
+    margin: 0;
+    text-align: center;
+}
+
+.dateDiv span{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.dateDiv span:nth-child(1){
+    font-size: 0.9rem;
+}
+
+.dateDiv span:nth-child(1),
+.dateDiv span p:nth-child(1){
+    font-weight: bold;
+}
+
+.phone-ui{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    inset: 0;
+    height: 120px;
+    align-items: center;
+}
+
+.phone-ui .btnBack{
+    color: rgb(0, 106, 255);
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    margin-top: 55px;
+    margin-right: 300px;
+    transform: rotate(45deg);
+    border-left: 3px solid rgb(36, 85, 233);
+    border-bottom: 3px solid rgb(36, 85, 233);
+}
+
+.phone-ui .profilePic{
+    background: linear-gradient(45deg, red, blue);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-inline: auto;
+    margin-top: 36px;
+}
+
+.phone-ui .profileName{
+    color: white;
+    font-family: system-ui;
+    position: absolute;
+    margin-top: 90px;
+}
+
+.phone-ui-2{
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    width: 90%;
+    height: 20px;
+    bottom: 5%;
+    justify-content: center;
+    padding: 20px;
+    gap: 5px;
+}
+
+.phone-ui-2 .messageBox,
+.phone-ui-2 .btnSend{
+    color: white;
+    font-family: system-ui;
+    padding: 10px;
+    padding-inline: 20px;
+    border-radius: 100vw;
+    border: 2px solid rgb(38, 38, 38);
+    background-color: rgba(0, 0, 0, 0.475);
+    height: 20px;
+}
+
+.phone-ui-2 .messageBox{
+    flex: 1;
+}
+
+.phone-ui-2 .btnSend{
+    max-width: 0px;
+    background-color: rgb(2, 104, 182);
+    display: flex;
+    justify-content: center;
+}
+
+.phone-ui-2 .btnSend img{
+    width: 20px;
+    filter: invert(1);
+}
+
+.btnOptions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    left: 80%;
+    gap: 10px;
+    width: 500px;
+}
+
+.btnOptions button{
+    padding: 30px 20px;
+    border-radius: 10vw;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: rgb(2, 104, 182);
+    border: none;
+    position: relative;
+    transition: 0.2s ease;
+}
+
+.btnOptions button:hover{
+    background-color: rgb(2, 80, 141);
+}
+
+.btnOptions .btnHome:hover{
+    background-color: rgba(61, 23, 40, 0.699);
+}
+
+.btnOptions .btnHome{
+    background-color: rgba(110, 45, 73, 0.699);
+    text-shadow: -2px -2px 0px rgb(230, 0, 98);
+    font-size: 1.7rem;
+    width: 200px;
+}
+
+.camNotch{
+    width: 60px;
+    height: 10px;
+    background-color: rgb(26, 26, 26);
+    border-right: 1px solid rgb(200, 200, 200, 0.2);
+    border-bottom: 1px solid rgb(200, 200, 200, 0.2);
+    position: absolute;
+    border-radius: 100vw;
+    left: 50%;
+    margin-top: 15px;
+    transform: translate(-50%, 0);
+    z-index: 21;
+}
+
+.camNotch-2{
+    width: 10px;
+    height: 10px;
+    background-color: rgba(13, 21, 65, 0.58);
+    border: 1px solid rgb(26, 26, 26);
+    position: absolute;
+    border-radius: 50%;
+    left: 55%;
+    margin-top: 15px;
+    transform: translate(-50%, 0);
+    z-index: 21;
+}
+
+
+/* -----------------------------css evaluatie page------------------------------ */
+
+
+body
+{
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0;
+}
+
+.header
+{
+    position: absolute;
+    background-color: #203261;
+    width: 100vw;
+    height: 30vh;
+    left: 0px;
+    top: 0px;
+    text-align: center;
+}
+
+.headerText
+{
+    color: white;
+}
+
+.header h1
+{
+    letter-spacing: 2px;
+    font-size: 80px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header h3
+{
+    position: relative;
+    bottom: 13%;
+    font-weight: 100;
+    font-size: 25px;
+}
+
+.linkheader
+{
+    text-decoration: none;
+    color: white;
+    background-color: #d90b67;
+    transition: 0.3s;
+    border-radius: 100px;
+    padding: 15px;
+}
+
+.linkheader:hover
+{
+    background-color: #8d0c46;
+}
+
+.plusDiv
+{
+    position: relative;
+    width: 50vw;
+    height: 35vh;
+    top: 30vh;
+    display: grid;
+    background-color: transparent;
+    border-bottom: #203261 solid 2px;
+    border-right: #203261 solid 2px;
+}
+
+.minDiv
+{
+    position: relative;
+    width: 50vw;
+    height: 35vh;
+    top: 30vh;
+    display: grid;
+    background-color: transparent;
+    border-right: #203261 solid 2px;
+}
+
+.resultaatDiv
+{
+    position: relative;
+    bottom: 40.2vh;
+    display: grid;
+    width: 50vw;
+    height: 70vh;
+    left: 50vw;
+    background-color:#d90b67;
+    color: white;
+}
+
+.feedbackp
+{
+    font-weight: 200;
+    font-size: 20px;
+    margin: 2%;
+    max-width: 600px;
+    margin-inline: auto;
+    font-size: 1.6rem;
+}
+
+.feebacklist
+{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+ul{
+    margin-inline: auto;
+    margin-bottom: 50px;
+}
+
+.feedbackh1
+{
+    position: relative;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.btnOptions img{
+    filter: invert(1);
+    width: 40px;
+    position: relative;
+    background-color: rgb(253, 151, 73); 
+    border-radius: 50%;
+    padding: 5px;
+    position: absolute;
+    right: -60px;
+    bottom: 50%;
+    transform: translate(0, 50%);
+}
+
+.your-text, .their-text{
+    animation: text-sent 0.5s;
+}
+
+button img:not(.sendImg){
+    display: none;
+}
+
+@keyframes text-sent {
+    from{
+        margin-top: 100%;
+    }
+    to{
+        margin-top: unset;
+    }
+}
+
